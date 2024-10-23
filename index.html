@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuyan Zhang - Personal Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+        
+        /* Overall Style */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            height: 100vh;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        /* Left Sidebar */
+        .sidebar {
+            width: 30%;
+            background: linear-gradient(to bottom, #0047ab, white);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            font-size: 0.9rem; /* Slightly reduce the font size */
+        }
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .sidebar h1 {
+            margin: 20px 0;
+            font-size: 2rem;
+        }
+        .sidebar p {
+            font-size: 0.9rem; /* Adjust font size for text other than your name */
+        }
+        .sidebar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .sidebar .social-links {
+            margin-top: auto;
+            display: flex;
+            gap: 15px;
+        }
+        .sidebar .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Right Side */
+        .content {
+            width: 68%; /* Slightly reduce width */
+            margin-right: 3%; /* Add space between content and page edge */
+            margin-left: 2%;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+        }
+        .content .intro-section {
+            background-color: #e3f2fd; /* Light Azure */
+            padding: 20px;
+            border-radius: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .content h2 {
+            color: #0047ab;
+        }
+        .bookmarks {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .bookmarks a {
+            text-decoration: none;
+            color: #008080; /* Turquoise */
+            font-weight: 500;
+        }
+        .content .separator {
+            width: 95%;
+            height: 4px;
+            background-color: #0047ab;
+            margin-top: 20px;
+        }
+
+        /* Scrollable Content */
+        .scrollable-section {
+            margin-top: 5px;
+            height: 65vh;
+            overflow-y: auto;
+        }
+        .project-card {
+            display: flex;
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project-card img {
+            width: 150px;
+            height: 100px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .project-info {
+            max-width: 75%;
+        }
+        .project-info h3 {
+            margin: 0;
+            color: #0047ab;
+        }
+        .project-info p {
+            font-size: 1rem;
+        }
+
+        /* Publications Section */
+        .publication-card {
+            display: flex;
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .publication-card img {
+            width: 150px;
+            height: 100px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .publication-info {
+            max-width: 75%;
+        }
+        .publication-info h3 {
+            margin: 0;
+            color: #0047ab;
+        }
+        .publication-info p {
+            font-size: 1rem;
+        }
+
+        /* Art Portfolio */
+        .art-portfolio {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .art-portfolio .art-item {
+            width: 45%;
+        }
+        .art-portfolio .art-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .art-portfolio .art-item p {
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+        <img src="images/Avatar.jpg" alt="Shuyan Zhang's Avatar">
+        <h1>Shuyan Zhang</h1>
+        <p><b>Robotics Engineer</b> | <b>MSc Student</b></p>
+        <p><b>Robotics, Machine Learning, Computer Vision</b></p>
+        <p><b>Email:</b> shuyan.zhang-3@postgrad.manchester.ac.uk</p>
+
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://linkedin.com/in/shuyan-zhang-2334a032b" target="_blank"><img src="images/LINKEDIN_ICON.webp" alt="LinkedIn"></a>
+            <a href="https://github.com/Arccsc-China" target="_blank"><img src="images/GITHUB_ICON.png" alt="GitHub"></a>
+            <a href="docs/ShuyanZhang-CV.pdf" target="_blank"><img src="images/CV_ICON.jpg" alt="CV"></a>
+        </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="content">
+        <!-- Intro Section (fixed) -->
+        <div class="intro-section">
+            <h2>About Me</h2>
+            <p>I am currently pursuing an MSc in Robotics at the University of Manchester. I have hands-on experience in projects like multi-robot control, IoT databases, and federated learning, where I took on leadership and teamwork roles. Additionally, I have two years of experience in media operations, video editing, and design. I plan to pursue a PhD in robotics or other fields that intrigue me.</p>
+            <div class="bookmarks">
+                <a href="#projects">Projects</a>
+                <a href="#publications">Publications</a>
+                <a href="#skills">Technical Skills</a>
+                <a href="#education">Education</a>
+                <a href="#art">Art Portfolio</a>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <!-- Scrollable Section -->
+        <div class="scrollable-section">
+            <!-- Projects Section -->
+            <div id="projects">
+                <h2>Projects</h2>
+                <div class="project-card">
+                    <img src="images/leorover-lite.jpg" alt="Project Cover">
+                    <div class="project-info">
+                        <a href="video/Leo-Rover-demo.mp4"><h3>Robot Systems Design Project (Leo Rover)</h3></a>
+                        <p><i>An ongoing project. This project simulates an engineering project, from design requirements analysis to hardware and software assembly and design. I am currently involved in assembly and software operation in the group.</i></p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/workflowLLM-project.png" alt="Project Cover">
+                    <div class="project-info">
+                        <h3>WorkflowLLM Project</h3>
+                        <p><i>This 2024 project aims to build a database based on the huge workflow files in Apple's shortcuts software to facilitate the training of LLM construction workflows. In the project, I was mainly responsible for the collection and organization of source files, as well as statistical decoding. I also assisted in the data generation process.</i></p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/multi-robot-control-project.jpg" alt="Project Cover">
+                    <div class="project-info">
+                        <h3>Multi-Robot Control Models Research Project</h3>
+                        <p><i>This project in 2023 aims to use machine learning as the general direction. After two weeks of online teaching and reports led by professors, the student groups independently select topics and conduct research. Our group chose to investigate multi-robot control models. I am the team leader in the group. In addition to my own tasks, I am also responsible for arranging the division of labor and following up the progress of team members. </i></p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/federated-learning-project.png" alt="Project Cover">
+                    <div class="project-info">
+                        <h3>Federated Learning Research Project</h3>
+                        <p><i>This project in 2023 includes a one-week offline research training on IoT technology, as well as subsequent independent research and paper writing. In this project, I chose to study federated learning and conducted a comprehensive analysis of the performance of several federated learning algorithms.</i></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications Section -->
+            <div id="publications">
+                <h2>Publications</h2>
+                <div class="publication-card">
+                    <img src="images/workflowLLM-project.png" alt="Publication Cover">
+                    <div class="publication-info">
+                        <a href="docs/dummy.docx"><h3>WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models</h3></a>
+                        <p>Outputs from WorkflowLLM Project.</p>
+                        <p>Submitting</p>
+                    </div>
+                </div>
+                
+                <div class="publication-card">
+                    <img src="images/multi-robot-control-project.jpg" alt="Publication Cover">
+                    <div class="publication-info">
+                        <a href="docs/PACSPL-602005-G5.docm"><h3>A Comprehensive Research about Multi-Robot Control Models</h3></a>
+                        <p>Outputs from Multi-Robot Control Models Research Project.</p>
+                        <p>Shuyan Zhang, Ziyang Zheng, & Shizhe Zu (2023). A Comprehensive Research about Multi-Robot Control Models. In Proceedings of the 2023 International Conference on Image, Algorithms and Artificial Intelligence (ICIAAI 2023) (pp. 723-735). Atlantis Press.</p>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <img src="images/federated-learning-project.png" alt="Publication Cover">
+                    <div class="publication-info">
+                        <a href="docs/A performance study of algorithms and frameworks for federated learning.pdf"><h3>A performance study of algorithms and frameworks for federated learning</h3></a>
+                        <p>Outputs from the Federated Learning Research Project.</p>
+                        <p>Zhang,S. (2024).A performance study of algorithms and frameworks for federated learning.Applied and Computational Engineering,40,155-161.</p>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <img src="images/Robotic-System-Project.png" alt="Publication Cover">
+                    <div class="publication-info">
+                        <a href="video/Robotic System for Sustainable Development.mp4"><h3>Robotic Systems for Sustainable Development</h3></a>
+                        <p>An educational video on how robotics can contribute to the UN SDGs</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>Programming languages: Python, C/C++, Java/Kotlin</li>
+                    <li>Framework: ROS2, PyTorch</li>
+                    <li>Software: Ps, Pr, Ae, Sai/Sai2</li>
+                </ul>
+            </div>
+
+            <!-- Education Section -->
+            <div id="education">
+                <h2>Education</h2>
+                <p>MSc Robotics, University of Manchester (2024.9 - )</p>
+                <p>BSc Computer Science and Technology, Beijing Institute of Technology (2018.9 - 2022.6)</p>
+            </div>
+
+            <!-- Art Portfolio Section -->
+            <div id="art">
+                <h2>Art Portfolio</h2>
+                <div class="art-portfolio">
+                    <div class="art-item">
+                        <img src="images/artwk-1.png" alt="Artwork 1">
+                        <p>Confrontation</p>
+                    </div>
+                    <div class="art-item">
+                        <img src="images/artwk-2.png" alt="Artwork 2">
+                        <p>Raven</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
