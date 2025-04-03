@@ -106,13 +106,15 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .project-card img {
-            width: 150px;
-            height: 100px;
+            width: 225px;
+            height: 150px;
             margin-right: 20px;
             object-fit: cover;
         }
         .project-info {
             max-width: 75%;
+            height: 200px;
+            overflow-y: auto;
         }
         .project-info h3 {
             margin: 0;
@@ -139,6 +141,8 @@
         }
         .publication-info {
             max-width: 75%;
+            height: 100%;
+            overflow-y: auto;
         }
         .publication-info h3 {
             margin: 0;
@@ -174,7 +178,6 @@
         <img src="images/Avatar.jpg" alt="Shuyan Zhang's Avatar">
         <h1>Shuyan Zhang</h1>
         <p><b>Robotics Engineer</b> | <b>MSc Student</b></p>
-        <p><b>Robotics, Machine Learning, Computer Vision</b></p>
         <p><b>Email:</b> shuyan.zhang-3@postgrad.manchester.ac.uk</p>
 
 
@@ -191,95 +194,86 @@
         <!-- Intro Section (fixed) -->
         <div class="intro-section">
             <h2>About Me</h2>
-            <p>I am currently pursuing an MSc in Robotics at the University of Manchester. I have hands-on experience in projects like multi-robot control, IoT databases, and federated learning, where I took on leadership and teamwork roles. Additionally, I have two years of experience in media operations, video editing, and design. I plan to pursue a PhD in robotics or other fields that intrigue me.</p>
-            <div class="bookmarks">
-                <a href="#projects">Projects</a>
-                <a href="#publications">Publications</a>
-                <a href="#skills">Technical Skills</a>
-                <a href="#education">Education</a>
-                <a href="#art">Art Portfolio</a>
-            </div>
+            <p>I am currently pursuing an MSc in Robotics at the University of Manchester. I have hands-on experience in projects like multi-robot control, IoT databases, and federated learning, where I took on leadership and teamwork roles. Additionally, I have two years of experience in media operations, video editing, and design.</p>
+            <p>I aim to pursue a PhD in Robotics. My objective is to contribute to the development of intelligent robotic platforms that can operate safely and efficiently in dynamic settings. </p>
         </div>
 
         <div class="separator"></div>
 
         <!-- Scrollable Section -->
         <div class="scrollable-section">
+            <!-- Research Interests Section -->
+            <div id="research interests">
+                <h2>Research Interests</h2>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Computer Vision</li>
+                        <li>Robotics (Control, Navigation, Sensor integration)</li>
+                    </ul>
+            </div>
             <!-- Projects Section -->
             <div id="projects">
-                <h2>Projects</h2>
-                <div class="project-card">
-                    <img src="images/leorover-lite.jpg" alt="Project Cover">
-                    <div class="project-info">
-                        <a href="video/Leo-Rover-demo.mp4"><h3>Robot Systems Design Project (Leo Rover)</h3></a>
-                        <p><i>An ongoing project. This project simulates an engineering project, from design requirements analysis to hardware and software assembly and design. I am currently involved in assembly and software operation in the group.</i></p>
-                    </div>
-                </div>
-
+                <h2>Research Experience</h2>
                 <div class="project-card">
                     <img src="images/workflowLLM-project.png" alt="Project Cover">
                     <div class="project-info">
-                        <h3>WorkflowLLM Project</h3>
-                        <p><i>This 2024 project aims to build a database based on the huge workflow files in Apple's shortcuts software to facilitate the training of LLM construction workflows. In the project, I was mainly responsible for the collection and organization of source files, as well as statistical decoding. I also assisted in the data generation process.</i></p>
+                        <h3>WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models</h3>
+                        <p><b><span style="color: #1f58a7;"></span></b><a href="docs/2616_WorkflowLLM_Enhancing_Wor.pdf">view publication</p></a>
+                        <p><i>This 2024 project aims to build a database benchmark based on the huge workflow files in Apple's shortcuts software to facilitate the training of LLM construction workflows. I contributed to establishing a robust database by systematically collecting and organizing extensive workflow files from Apple’s Shortcuts software. My primary responsibilities included the statistical decoding of these source files and assisting in the data generation process, which supported the training of large language model construction workflows. This experience deepened my skills in data management and quantitative analysis, directly supporting advancements in LLM research.</i></p>                        
                     </div>
                 </div>
 
                 <div class="project-card">
                     <img src="images/multi-robot-control-project.jpg" alt="Project Cover">
                     <div class="project-info">
-                        <h3>Multi-Robot Control Models Research Project</h3>
-                        <p><i>This project in 2023 aims to use machine learning as the general direction. After two weeks of online teaching and reports led by professors, the student groups independently select topics and conduct research. Our group chose to investigate multi-robot control models. I am the team leader in the group. In addition to my own tasks, I am also responsible for arranging the division of labor and following up the progress of team members. </i></p>
+                        <h3>A Comprehensive Research about Multi-Robot Control Models</h3>
+                        <p><b><span style="color: #1f58a7;"></span></b><a href="docs/PACSPL-602005-G5.docm">view publication</p></a>
+                        <p><i>This project in 2023 aims to use machine learning as the general direction. my team and I independently selected and investigated multi-robot control models. As the team leader, I orchestrated the research process by conducting comparative analyses of various control methodologies and authoring detailed technical documentation. Additionally, I coordinated team assignments and monitored progress to ensure timely completion of our objectives. This leadership role not only advanced my understanding of multi-robot systems but also refined my project management and collaborative skills. </i></p>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <img src="images/federated-learning-project.png" alt="Project Cover">
                     <div class="project-info">
-                        <h3>Federated Learning Research Project</h3>
-                        <p><i>This project in 2023 includes a one-week offline research training on IoT technology, as well as subsequent independent research and paper writing. In this project, I chose to study federated learning and conducted a comprehensive analysis of the performance of several federated learning algorithms.</i></p>
+                        <h3>A performance study of algorithms and frameworks for federated learning</h3>
+                        <p><b><span style="color: #1f58a7;"></span></b><a href="docs/A performance study of algorithms and frameworks for federated learning.pdf">view publication</p></a>
+                        <p><i>During this project, I engaged in an intensive one-week offline research training on IoT technology, followed by independent research culminating in academic paper writing. Focusing on federated learning, I conducted a thorough performance analysis of several federated learning algorithms. This project significantly broadened my understanding of distributed machine learning techniques and their applications within IoT systems, while also enhancing my research and analytical capabilities.</i></p>
                     </div>
                 </div>
             </div>
 
             <!-- Publications Section -->
-            <div id="publications">
-                <h2>Publications</h2>
-                <div class="publication-card">
-                    <img src="images/workflowLLM-project.png" alt="Publication Cover">
-                    <div class="publication-info">
-                        <a href="docs/dummy.docx"><h3>WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models</h3></a>
-                        <p>Outputs from WorkflowLLM Project.</p>
-                        <p>Submitting</p>
-                    </div>
-                </div>
-                
-                <div class="publication-card">
-                    <img src="images/multi-robot-control-project.jpg" alt="Publication Cover">
-                    <div class="publication-info">
-                        <a href="docs/PACSPL-602005-G5.docm"><h3>A Comprehensive Research about Multi-Robot Control Models</h3></a>
-                        <p>Outputs from Multi-Robot Control Models Research Project.</p>
-                        <p>Shuyan Zhang, Ziyang Zheng, & Shizhe Zu (2023). A Comprehensive Research about Multi-Robot Control Models. In Proceedings of the 2023 International Conference on Image, Algorithms and Artificial Intelligence (ICIAAI 2023) (pp. 723-735). Atlantis Press.</p>
+            <div id="professional-projects">
+                <h2>Professional Projects</h2>
+                <div class="project-card">
+                    <img src="images/leorover-lite.jpg" alt="Project Cover">
+                    <div class="project-info">
+                        <h3>Robot Systems Design Project (Leo Rover)</h3>
+                        <p><a href="https://github.com/Junzhe-Yan/RobotDesignProject_Team11">view project on Github</p></a>
+                        <p><a href="">watch demonstration</p></a>
+                        <p><i>This project simulates a typical robot engineering project, from design requirements analysis to hardware and software assembly and design. I contributed to the development of the robot’s mapping and navigation capabilities—critical components for autonomous operation. My responsibilities encompassed designing and implementing the mapping and navigation algorithms, as well as drafting comprehensive documentation and systematically recording project progress. This role significantly enhanced my expertise in robotic localization, path planning, and technical reporting.</i></p>
                     </div>
                 </div>
 
-                <div class="publication-card">
-                    <img src="images/federated-learning-project.png" alt="Publication Cover">
+                <div class="project-card">
+                    <img src="images/RPLIDAR-cover.png" alt="Publication Cover">
                     <div class="publication-info">
-                        <a href="docs/A performance study of algorithms and frameworks for federated learning.pdf"><h3>A performance study of algorithms and frameworks for federated learning</h3></a>
-                        <p>Outputs from the Federated Learning Research Project.</p>
-                        <p>Zhang,S. (2024).A performance study of algorithms and frameworks for federated learning.Applied and Computational Engineering,40,155-161.</p>
+                        <h3>A Study on the Characterisation of the SLAMTEC RPLIDAR A2M12 for Robotic Applications</h3></a>
+                        <p><a href="">watch video</p></a>
+                        <p>In this project, I conducted a detailed evaluation of a specific lidar’s parameters by performing empirical measurements and comparing the results with the manufacturer’s specifications. My analysis involved assessing the sensor’s performance metrics to determine its viability in a robotics application. Through this work, I contributed to a deeper understanding of sensor characteristics, which has enhanced my skills in data acquisition, analytical comparison, and performance evaluation in robotic systems.</p>
                     </div>
                 </div>
 
-                <div class="publication-card">
+                <div class="project-card">
                     <img src="images/Robotic-System-Project.png" alt="Publication Cover">
                     <div class="publication-info">
-                        <a href="video/Robotic System for Sustainable Development.mp4"><h3>Robotic Systems for Sustainable Development</h3></a>
-                        <p>An educational video on how robotics can contribute to the UN SDGs</p>
+                        <h3>Robotic Systems for Sustainable Development</h3></a>
+                        <p><a href="">watch video</p></a>
+                        <p>In this project, I undertook a systematic examination of the United Nations Sustainable Development Goals (SDGs), ultimately selecting SDG6 for focused research. I analyzed the potential impacts of robotics on achieving SDG6, synthesizing the findings into a comprehensive investigation. Additionally, I produced a popular science video to communicate these insights to a broader audience. This endeavor not only advanced my research and analytical abilities but also refined my skills in scientific communication and public engagement in sustainability topics.</p>
                     </div>
                 </div>
             </div>
-
+            
             <!-- Skills Section -->
             <div id="skills">
                 <h2>Technical Skills</h2>
@@ -295,6 +289,19 @@
                 <h2>Education</h2>
                 <p>MSc Robotics, University of Manchester (2024.9 - )</p>
                 <p>BSc Computer Science and Technology, Beijing Institute of Technology (2018.9 - 2022.6)</p>
+            </div>
+
+            <div id="publication">
+                <h2>Publication</h2>
+                <ul>
+                    <p>
+                        <strong>[2025]</strong> Shengda Fan, Xin Cong, Yuepeng Fu, Zhong Zhang, Shuyan Zhang, Yuanwei Liu, Yesai Wu, Yankai Lin, Zhiyuan Liu, and Maosong Sun (2025). 
+                        <em>WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models</em>. 
+                        In Proceedings of the Thirteenth International Conference on Learning Representations. 
+                    </p>                      
+                    <p><strong>[2023]</strong>Shuyan Zhang, Ziyang Zheng, & Shizhe Zu (2023). A Comprehensive Research about Multi-Robot Control Models. In Proceedings of the 2023 International Conference on Image, Algorithms and Artificial Intelligence (ICIAAI 2023) (pp. 723-735). Atlantis Press.</p>
+                    <p><strong>[2024]</strong>Shuyan Zhang (2024). A performance study of algorithms and frameworks for federated learning. Applied and Computational Engineering, 40, 155-161.</p>
+                </ul>
             </div>
 
             <!-- Art Portfolio Section -->
